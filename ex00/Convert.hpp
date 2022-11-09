@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 09:07:47 by aparolar          #+#    #+#             */
-/*   Updated: 2022/08/02 09:39:48 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/11/09 20:07:53 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,12 @@ class Convert
 		double _value;
 	
 	public:
-		Convert() {}
+		Convert();
+		Convert(Convert const &toCopy);
 		Convert(const char* value);
-		~Convert() {};
+		~Convert();
+
+		Convert& operator=(Convert const &toCopy);
 		
 		void toChar();
 		void toInt();

@@ -6,15 +6,30 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 09:07:51 by aparolar          #+#    #+#             */
-/*   Updated: 2022/08/02 09:42:01 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/11/09 20:08:16 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Convert.hpp"
 
+Convert::Convert() {}
+
+Convert::Convert(Convert const &toCopy)
+{
+	*this = toCopy;
+}
+
 Convert::Convert(const char *value)
 {
 	_value = std::atof(value);
+}
+
+Convert::~Convert() {}
+
+Convert& Convert::operator=(Convert const &toCopy)
+{
+	this->_value = toCopy._value;
+	return *this;
 }
 
 void Convert::toChar()
