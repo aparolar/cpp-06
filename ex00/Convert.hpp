@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 09:07:47 by aparolar          #+#    #+#             */
-/*   Updated: 2022/11/09 20:07:53 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/12/03 16:45:35 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include <stdlib.h>
 # include <limits.h>
 
-# define DISPLAY_MIN  33
+# define DISPLAY_MIN  32
 # define DISPLAY_MAX 126
 
 class Convert
