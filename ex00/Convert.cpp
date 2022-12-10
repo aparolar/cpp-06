@@ -6,7 +6,7 @@
 /*   By: aparolar <aparolar@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/02 09:07:51 by aparolar          #+#    #+#             */
-/*   Updated: 2022/12/03 16:46:16 by aparolar         ###   ########.fr       */
+/*   Updated: 2022/12/10 18:46:46 by aparolar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ Convert& Convert::operator=(Convert const &toCopy)
 void Convert::toChar()
 {
 	std::cout << "char: ";
-	if (std::isnan(_value) || _value < CHAR_MIN || _value > CHAR_MAX)
+	if (_value < CHAR_MIN || _value > CHAR_MAX)
 		std::cout << "impossible";
 	else if (_value < DISPLAY_MIN || _value > DISPLAY_MAX)
 		std::cout << "Non displayable";
